@@ -1,4 +1,4 @@
-defmodule Tsex.Pro do
+defmodule TuSharex.Pro do
   @url "http://api.tushare.pro"
   @timeout 10
 
@@ -17,7 +17,7 @@ defmodule Tsex.Pro do
     |> response()
   end
 
-  defp token(), do: Application.get_env(:tsex, :token, nil)
+  defp token(), do: Application.get_env(:tusharex, :token, nil)
 
   defp response({:ok, %HTTPoison.Response{status_code: 200, body: body}}),
     do: body |> Jason.decode()
