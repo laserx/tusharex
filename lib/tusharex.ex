@@ -1,2 +1,2 @@
-defmodule TuSharex do
+defmodule Tusharex do
 end

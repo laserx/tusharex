@@ -1,4 +1,4 @@
-defmodule TuSharex.MixProject do
+defmodule Tusharex.MixProject do
   use Mix.Project
 
   def project do

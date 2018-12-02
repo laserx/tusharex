@@ -1,4 +1,4 @@
-defmodule TuSharex.Pro do
+defmodule Tusharex.Pro do
   @url "http://api.tushare.pro"
   @timeout 10
 
