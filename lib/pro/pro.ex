@@ -39,9 +39,7 @@ defmodule Tusharex.Pro do
   end
 
   @doc false
-  defp response({:error, %HTTPoison.Error{reason: reason}}) do
-    {:error, reason}
-  end
+  defp response({:error, %HTTPoison.Error{reason: reason}}), do: {:error, reason}
 
   @doc """
   response check
