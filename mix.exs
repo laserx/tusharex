@@ -1,12 +1,15 @@
 defmodule Tusharex.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
+
   def project do
     [
       app: :tusharex,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
+      description: description(),
       deps: deps()
     ]
   end
@@ -26,5 +29,9 @@ defmodule Tusharex.MixProject do
       {:httpoison, "~> 1.4"},
       {:jason, "~> 1.1"}
     ]
+  end
+
+  defp description do
+    "Tushare Pro elixir SDK"
   end
 end
