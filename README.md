@@ -1,3 +1,3 @@
 # Tusharex
 
-Tushare Pro elixir SDK (wip)
+Tushare Pro elixir SDK
