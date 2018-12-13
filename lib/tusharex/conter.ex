@@ -13,7 +13,7 @@ defmodule Tusharex.Counter do
     time_compare()
     |> recycle()
 
-    Agent.update(__MODULE__, &update/1)
+    Agent.update(__MODULE__, &struct(&1, times: &1.times + 1))
   end
 
   def value do
@@ -36,8 +36,4 @@ defmodule Tusharex.Counter do
     do: Agent.update(__MODULE__, &struct(&1, times: 0, stamp: Time.utc_now()))
 
   defp recycle(false), do: nil
-
-  defp update(s) do
-    s |> struct(times: s.times + 1)
-  end
 end
