@@ -1,6 +1,6 @@
 defmodule Tusharex.Pro do
   @url "http://api.tushare.pro"
-  @timeout 10
+  @timeout 10_000
   @freq 150
 
   @doc """
