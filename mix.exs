@@ -18,7 +18,6 @@ defmodule Tusharex.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      applications: [:httpoison],
       mod: {Tusharex.Application, []}
     ]
   end
